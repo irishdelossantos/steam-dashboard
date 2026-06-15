@@ -1,0 +1,119 @@
+Total rows: 1000
+
+--- Column info ---
+app_id               int64
+name                   str
+developer              str
+publisher              str
+genre                  str
+tags                   str
+price              float64
+discount             int64
+score_rank           int64
+positive             int64
+negative             int64
+owners                 str
+ccu                  int64
+average_forever      int64
+languages              str
+dtype: object
+
+--- Missing values per column ---
+app_id             0
+name               0
+developer          0
+publisher          0
+genre              0
+tags               0
+price              0
+discount           0
+score_rank         0
+positive           0
+negative           0
+owners             0
+ccu                0
+average_forever    0
+languages          0
+dtype: int64
+
+--- Price range ---
+count    1000.000000
+mean       16.930840
+std        17.203503
+min         0.000000
+25%         0.990000
+50%        13.990000
+75%        24.990000
+max        69.990000
+Name: price, dtype: float64
+
+--- Genre breakdown ---
+genre
+Action                                                         148
+Action, Adventure                                               96
+Action, Adventure, RPG                                          35
+Action, RPG                                                     35
+Action, Adventure, Indie                                        35
+Strategy                                                        34
+RPG                                                             28
+Action, Indie                                                   28
+Action, Free To Play                                            23
+Action, Adventure, Indie, RPG                                   16
+Simulation, Strategy                                            15
+Simulation, Sports                                              14
+Adventure, Indie                                                14
+Simulation                                                      12
+Indie, Simulation                                               11
+Indie, Simulation, Strategy                                     11
+Action, Casual, Indie                                           11
+Action, Adventure, Massively Multiplayer, RPG, Free To Play      8
+Action, Adventure, Indie, Simulation                             8
+Action, Strategy                                                 8
+Name: count, dtype: int64
+
+--- Sample of tags (first 10 rows) ---
+0    FPS, Shooter, Multiplayer, Competitive, Action...
+1    Free to Play, Battle Royale, Multiplayer, FPS,...
+2    Survival, Shooter, Battle Royale, Multiplayer,...
+3    Open World, Survival, Creature Collector, Mult...
+4    Free to Play, Hero Shooter, Multiplayer, FPS, ...
+5    FPS, Multiplayer, Shooter, Singleplayer, Actio...
+6    Open World, Massively Multiplayer, MMORPG, RPG...
+7    Mythology, Action RPG, Action, Souls-like, RPG...
+8    Open World, Action, Multiplayer, Crime, Automo...
+9    Zombies, Co-op, FPS, Multiplayer, Shooter, Onl...
+Name: tags, dtype: str
+
+--- Owners breakdown ---
+owners
+2,000,000 .. 5,000,000        432
+1,000,000 .. 2,000,000        337
+5,000,000 .. 10,000,000       134
+10,000,000 .. 20,000,000       53
+20,000,000 .. 50,000,000       32
+50,000,000 .. 100,000,000       9
+100,000,000 .. 200,000,000      3
+Name: count, dtype: int64
+
+--- Sample rows ---
+                                name                                                        genre  price  positive  negative                                                                                                                                                                                                                                                     tags
+0   Counter-Strike: Global Offensive                                         Action, Free To Play   0.00   7642084   1173003                                                     FPS, Shooter, Multiplayer, Competitive, Action, Team-Based, e-sports, Tactical, First-Person, PvP, Online Co-Op, Co-op, Strategy, Military, War, Difficult, Trading, Realistic, Fast-Paced, Moddable
+1                       Apex Legends                              Action, Adventure, Free To Play   0.00    668053    326926                                    Free to Play, Battle Royale, Multiplayer, FPS, Shooter, First-Person, PvP, Action, Hero Shooter, Team-Based, Tactical, Sci-fi, Loot, Survival, Co-op, Character Customization, Funny, Lore-Rich, Cyberpunk, Cinematic
+2                PUBG: BATTLEGROUNDS       Action, Adventure, Massively Multiplayer, Free To Play   0.00   1520457   1037487                        Survival, Shooter, Battle Royale, Multiplayer, FPS, PvP, Third-Person Shooter, Action, Online Co-Op, Tactical, Co-op, First-Person, Strategy, Early Access, Competitive, Third Person, Team-Based, Difficult, Simulation, Stealth
+3                           Palworld                  Action, Adventure, Indie, RPG, Early Access  29.99    358266     22443   Open World, Survival, Creature Collector, Multiplayer, Open World Survival Craft, Online Co-Op, Crafting, Co-op, Adventure, Base-Building, Sandbox, Building, Third-Person Shooter, Automation, Action, RPG, Anime, Early Access, Exploration, Farming
+4                    Team Fortress 2                                         Action, Free To Play   0.00   1044264    117208                                            Free to Play, Hero Shooter, Multiplayer, FPS, Shooter, Action, Class-Based, Team-Based, Funny, First-Person, Online Co-Op, Competitive, Cartoony, Trading, Co-op, Comedy, Robots, Tactical, Cartoon, Crafting
+5    Call of Duty: Modern Warfare II                                                       Action  38.49    419594    294520                                       FPS, Multiplayer, Shooter, Singleplayer, Action, Military, First-Person, War, Modern, Tactical, Violent, Co-op, Realistic, Story Rich, Atmospheric, Mature, Online Co-Op, Gore, Third-Person Shooter, Third Person
+6                New World: Aeternum                Action, Adventure, Massively Multiplayer, RPG  59.99    196798     90080  Open World, Massively Multiplayer, MMORPG, RPG, Adventure, Action, PvP, PvE, Multiplayer, Fantasy, Character Customization, Walking Simulator, Crafting, Third Person, Co-op, Open World Survival Craft, Sandbox, Violent, Sexual Content, Singleplayer
+7                 Black Myth: Wukong                                       Action, Adventure, RPG  59.99   1111720     38378                                    Mythology, Action RPG, Action, Souls-like, RPG, Combat, Story Rich, Singleplayer, Action-Adventure, Drama, Dark Fantasy, Atmospheric, Adventure, 3D, Fantasy, Hack and Slash, Difficult, Third Person, Music, Violent
+8          Grand Theft Auto V Legacy                                            Action, Adventure   0.00   1739980    250576                       Open World, Action, Multiplayer, Crime, Automobile Sim, Third Person, First-Person, Mature, Shooter, Adventure, Singleplayer, Third-Person Shooter, Racing, Co-op, Sandbox, Atmospheric, Funny, Great Soundtrack, Comedy, Moddable
+9                      Left 4 Dead 2                                                       Action   9.99    940221     23762                             Zombies, Co-op, FPS, Multiplayer, Shooter, Online Co-Op, Action, Survival, Horror, First-Person, Gore, Team-Based, Moddable, Survival Horror, Post-apocalyptic, Singleplayer, Adventure, Local Co-Op, Replay Value, Tactical
+10                          Unturned               Action, Adventure, Casual, Indie, Free To Play   0.00    506516     48852                     Free to Play, Survival, Zombies, Multiplayer, Open World, Co-op, Sandbox, Crafting, Shooter, Adventure, Post-apocalyptic, First-Person, Singleplayer, Looter Shooter, FPS, Action, Massively Multiplayer, Indie, Atmospheric, Casual
+11                          Lost Ark  Action, Adventure, Massively Multiplayer, RPG, Free To Play   0.00    143481     58540              MMORPG, Free to Play, Action RPG, Multiplayer, Hack and Slash, Character Customization, RPG, Massively Multiplayer, Action, Sexual Content, Adventure, PvE, Fantasy, PvP, Isometric, Online Co-Op, Class-Based, Singleplayer, Violent, Gore
+12    Tom Clancy's Rainbow Six Siege                                                       Action  19.99   1172854    225730                                                     FPS, PvP, Multiplayer, Tactical, e-sports, Shooter, Competitive, Online Co-Op, Action, Hero Shooter, Team-Based, Military, Strategy, First-Person, Co-op, Realistic, War, Destruction, Difficult, 3D
+13                       War Thunder      Action, Massively Multiplayer, Simulation, Free To Play   0.00    484469    272617                   Free to Play, Simulation, Vehicular Combat, Combat, World War II, Flight, VR, War, Military, Tanks, Multiplayer, Naval Combat, Modern, Massively Multiplayer, Cold War, Realistic, Shooter, Action, Third Person, Third-Person Shooter
+14              Monster Hunter Wilds                                       Action, Adventure, RPG  29.39    127273     91142                Hunting, Action, Multiplayer, Online Co-Op, Co-op, Dating Sim, Character Customization, Dragons, Open World, Third Person, Action RPG, Adventure, Fantasy, Cute, RPG, Singleplayer, Atmospheric, Great Soundtrack, Underwater, Souls-like
+15                      HELLDIVERS 2                                                       Action  39.99    775883    241752            Online Co-Op, PvE, Third-Person Shooter, Multiplayer, Action, Shooter, Co-op, Sci-fi, Capitalism, Space, Extraction Shooter, Third Person, Comedy, Gore, Violent, Great Soundtrack, Difficult, Psychological Horror, Singleplayer, Open World
+16                          Warframe                                    Action, RPG, Free To Play   0.00    545393     81110     Free to Play, Action RPG, Looter Shooter, Third-Person Shooter, Action, RPG, Third Person, Character Customization, Massively Multiplayer, Online Co-Op, Co-op, PvE, Sci-fi, Singleplayer, Space, Shooter, Lore-Rich, Hack and Slash, Parkour, Ninja
+17                        ELDEN RING                                                  Action, RPG  59.99    981540     75137               Souls-like, Open World, Dark Fantasy, RPG, Difficult, Action RPG, Third Person, Multiplayer, Fantasy, Singleplayer, Online Co-Op, Action, Co-op, Atmospheric, PvP, Great Soundtrack, Violent, 3D, Character Customization, Family Friendly
+18                          Terraria                                Action, Adventure, Indie, RPG   9.99   1373979     35494                      Open World Survival Craft, Sandbox, Survival, 2D, Multiplayer, Adventure, Pixel Graphics, Crafting, Building, Exploration, Co-op, Open World, Online Co-Op, Indie, Action, RPG, Singleplayer, Replay Value, Platformer, Atmospheric
+19                   Path of Exile 2  Action, Adventure, Massively Multiplayer, RPG, Early Access  29.99    118511     50510     Action RPG, Hack and Slash, RPG, Souls-like, MMORPG, Dark Fantasy, Isometric, Action, Loot, Dungeon Crawler, Adventure, Multiplayer, Online Co-Op, Character Customization, Early Access, Inventory Management, Crafting, Horror, Dark, Free to Play
