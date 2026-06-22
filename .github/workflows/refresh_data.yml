@@ -24,6 +24,14 @@ jobs:
         run: |
           pip install requests pandas sqlalchemy psycopg2-binary
 
+      - name: Debug network connectivity
+        run: |
+          echo "Testing SteamSpy reachability..."
+          curl -v --max-time 15 "https://steamspy.com/api.php?request=all&page=0" | head -c 500
+          echo ""
+          echo "Testing Supabase pooler reachability..."
+          curl -v --max-time 15 "https://aws-1-ap-southeast-1.pooler.supabase.com" || echo "curl to Supabase host failed (expected if it's not HTTP, but should at least connect/resolve)"
+          
       - name: Run refresh script
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
