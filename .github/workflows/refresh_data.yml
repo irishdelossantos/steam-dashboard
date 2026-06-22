@@ -1,0 +1,31 @@
+name: Refresh Steam Data
+
+on:
+  schedule:
+    # Runs every Sunday at 00:00 UTC. Adjust the cron expression to change timing.
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+    # Allows manually triggering this from the GitHub Actions tab, useful for testing
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests pandas sqlalchemy psycopg2-binary
+
+      - name: Run refresh script
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        run: |
+          python refresh_data.py

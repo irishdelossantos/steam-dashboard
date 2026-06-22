@@ -5,3 +5,4 @@ __pycache__/
 .DS_Store
 node_modules/
 .next/
+data_info.txt
