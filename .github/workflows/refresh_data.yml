@@ -27,5 +27,6 @@ jobs:
       - name: Run refresh script
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          PYTHONUNBUFFERED: "1"
         run: |
           python refresh_data.py
